@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#242640">
+  <meta name="description" content="Demo de analítica de TikTok e Instagram con publicaciones y métricas ficticias.">
+  <title>Radar Social · Demo</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="shell">
+    <aside class="rail">
+      <a class="brand" href="#resumen">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="14" cy="14" r="10"/><circle cx="14" cy="14" r="5.6"/><path d="m14 14 7-7"/><circle cx="14" cy="14" r="1.1" fill="currentColor"/></svg></span>
+        <span>Radar Social<small>Analítica de redes</small></span>
+      </a>
+      <label class="network-select">Plataforma
+        <select id="network"><option value="tiktok">TikTok</option><option value="instagram">Instagram</option></select>
+      </label>
+      <nav class="nav" aria-label="Vistas de la demostración">
+        <a href="#resumen" data-route="resumen" data-icon="chart" aria-current="page">Resumen</a>
+        <a href="#seguimiento" data-route="seguimiento" data-icon="calendar">Seguimiento</a>
+        <a href="#audiencia" data-route="audiencia" data-icon="people">Audiencia</a>
+        <a href="#publicaciones" data-route="publicaciones" data-icon="video">Publicaciones</a>
+        <a href="#historias" data-route="historias" data-icon="eye" hidden>Historias</a>
+        <a href="#validacion" data-route="validacion" data-icon="refresh">Actualizar datos</a>
+        <a href="#proyecto" data-route="proyecto" data-icon="arrow">Proyecto</a>
+      </nav>
+      <div class="rail-footer">
+        <p><span class="demo-indicator" aria-hidden="true"></span>Datos ficticios</p>
+        <a id="portfolio-return" href="http://localhost:41763/#proyectos" hidden>← Volver al portafolio</a>
+      </div>
+    </aside>
+    <main id="contenido" class="main" tabindex="-1">
+      <div class="topbar">
+        <p class="breadcrumb"><span id="breadcrumb-platform">TikTok</span><span aria-hidden="true">/</span><strong id="breadcrumb-view">Resumen</strong></p>
+        <div class="account"><span class="avatar" aria-hidden="true">BC</span><div><strong>Brújula Café</strong><small>Cuenta ficticia</small></div></div>
+      </div>
+      <div id="view" class="view">
+        <noscript><p>Activa JavaScript para consultar la demo.</p></noscript>
+      </div>
+      <footer>Demostración de Juan José Vallejo</footer>
+    </main>
+  </div>
+  <p id="announcement" class="sr-only" aria-live="polite"></p>
+  <dialog id="post-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-head"><h2 id="dialog-title"></h2><form method="dialog"><button class="button secondary" type="submit" autofocus>Cerrar</button></form></div>
+    <div id="dialog-content"></div>
+  </dialog>
+  <script type="module" src="./assets/app.js"></script>
+</body>
+</html>
